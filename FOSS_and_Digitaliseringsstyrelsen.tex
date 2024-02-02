@@ -1,0 +1,103 @@
+% !TeX TXS-program:bibliography = txs:///biber
+\documentclass[twoside,12pt,a4paper]{article}
+\usepackage[danish]{babel}
+
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}%,sorting=ydnt
+\usepackage{csquotes}
+\addbibresource{FOSS_and_Digitaliseringsstyrelsen.bib}
+
+\usepackage[headheight=26pt,bottom=3cm]{geometry} %[top=2cm, bottom=2cm, outer=0cm, inner=0cm]
+
+\usepackage[T1]{fontenc} 
+
+\usepackage{graphicx}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% to make lists
+\usepackage{enumitem}
+
+% math
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% title
+\usepackage{titling}
+\usepackage[style=iso]{datetime2}
+
+\usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+% \usepackage[pdfusetitle]{hyperref}
+
+\title{FOSS og Digitaliseringen af Staten}
+\author{Rasmus Enevoldsen}
+\date{\today}
+
+% header and footer
+\fancyhead{} % clear all header fields
+\fancyfoot[C]{Side \thepage\ af \pageref{LastPage}}
+\pagestyle{fancy}
+
+%-----------------------
+% Set pdf information and add title, fill in the fields
+%-----------------------
+\hypersetup{ 	
+pdfsubject = {},
+pdftitle = {},
+pdfauthor = {}
+}
+
+%-----------------------
+% Begin document
+%-----------------------
+\begin{document}
+
+
+	\begin{titlepage}
+		\begin{center}
+			\Huge \thetitle\\
+			\LARGE \theauthor
+			\vfill
+			% \includegraphics[width=0.8\textwidth]{./img/Bivector_ManimCE_v0.16.0.Bivector}
+			%		\includegraphics[width=1\textwidth]{./img/Bivector_ManimCE_v0.16.0.wedge}
+			\vfill
+			% \large \\
+			\normalsize % AAU\\
+			% My class
+      \thedate\\
+      \pageref{LastPage}
+      % number of charters
+		\end{center}
+		\setcounter{page}{0}
+	\end{titlepage}
+
+    \section{Introduction}
+
+    \section{TODO}
+    read about the law that fundet MitID and the rest of Denmarks digital offerings. 
+    
+    Write about the benefits of Open Source and FOSS. 
+    GPL VS MIT. 
+        Help to devoping contries
+        A more transperent state
+
+    \begin{itemize}
+        \item MitID
+        \item Rejsekor
+        \item Kørekort
+        \item At Stemme
+        \item MinSundhed
+        \item e-Boks
+        \item Pas
+        \item Skat
+    \end{itemize}
+
+
+
+
+    Logo and why it should not be free to use
+    
+    \newpage
+    \printbibliography
+
+\end{document}
